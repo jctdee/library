@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Library</title>
+</head>
+<body>
+  <header>
+    <h1>Library</h1>
+  </header>
+  <main>
+    <button id="open-modal-button">
+      <div class="button-text">
+        <p class='plus-icon'>+</p>
+        <p>&nbsp&nbspAdd Book</p>
+      </div>
+    </button>
+    <div class="book-grid" id="book-grid">
+      <!-- <div class="grid-item">
+        <button class="remove-button">X</button>
+        <div class="title">
+          <p>Eragon</p>
+        </div>
+        <div class="author">
+          <p>Christopher Paolini</p>
+        </div>
+        <div class="pages">
+          <p>500 pages</p>
+        </div>
+        <div class="status">
+          <button class="read">Read</button>
+        </div>
+      </div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div> -->
+    </div>
+  </main>
+  <footer>
+    <p>Developed for the The Odin Project © Dee, John Christopher 2022</p>
+  </footer>
+  <!-- MODAL STARTS HERE -->
+  <dialog class="modal" id="modal">
+    <div class="modal-title">Add New Book</div>
+    <div class="modal-body">
+      <form action="#" method="dialog">
+        <input type="text" name="book-title" id="book-title" placeholder="Title" required>
+        <input type="text" name="book-author" id="book-author" placeholder="Author" required>
+        <input type="number" name="book-pages" id="book-pages" placeholder="Pages" required>
+        <div class="read-container">
+          <label for="read-status">Have you read this book?</label>
+          <input type="checkbox" name="read-status" id="read-status">
+        </div>
+        <div class="button-container">
+          <button type="submit" id="modal-submit">Submit</button>
+          <input type="button" value="Cancel" id="modal-cancel">
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- MODAL ENDS HERE -->
+  <div id="overlay">
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
